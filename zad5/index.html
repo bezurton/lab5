@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File 5</title>
+    <link rel="stylesheet" href="css/style5.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header__title">Bash</div>
+        <nav class="header__navigation">
+            <a href="#">Главная</a>
+            <a href="#">Каталог</a>
+            <a href="#">О нас</a>
+            <a href="#">Контакты</a>
+            <a href="#">Корзина</a>
+        </nav>
+        <form>
+            <input type="text" placeholder="Поиск...">
+            <button type="submit">Найти</button>
+        </form>
+    </header>
+    <main>
+        <h1>Добро пожаловать на главную страницу Bash!</h1>
+        <section>
+            <h2>Популярные товары</h2>
+            <div class="filter">
+
+                <div class="radiobuttons">
+                    <h3>Сортировка по производителю</h3>
+                    <form action="#">
+                        <input type="radio" name="manufacture" id="all">Все
+                        <input type="radio" name="manufacture" id="logitech">Logitech
+                        <input type="radio" name="manufacture" id="asus">Asus
+                        <input type="radio" name="manufacture" id="iphone">Iphone
+                    </form>
+                </div>
+
+                <div class="checkboxes">
+                    <h3>Сортировка по типу товара</h3>
+                    <form action="#">
+                        <input type="checkbox">Периферия
+                        <input type="checkbox">Комп.техника
+                        <input type="checkbox">Носители
+                    </form>
+                </div>
+
+                <div class="select">
+                    <h3>Сортировка по характеристикам</h3>
+                    <form action="#">
+                        <select name="sort">
+                            <option selected disabled>Сортировка</option>
+                            <option value="asc">По возрастанию цены</option>
+                            <option value="desc">По убыванию цены</option>
+                            <option value="name">По названию</option>
+                            <option value="date">По дате</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+            <div class="product">
+                <div class="product__item">
+                    <div class="product__image">
+                        <img src="https://c.dns-shop.ru/thumb/st1/fit/500/500/030d4eebc15b7484ced57df2a0c7ea02/7a006db9db2d9eabfce3e131d9005a5ce90b0085b7fe7ef6e76417e53d4ff0ce.jpg.webp"
+                            alt="Компьютер">
+                    </div>
+                    <div class="product__title">Компьютер</div>
+                    <div class="product__description">Intel Core i7-12700 | Intel UHD Graphics 770</div>
+                    <div class="product__price">52 999 р.</div>
+                    <div class="product__button">Добавить в корзину</div>
+                </div>
+                <div class="product__item asus">
+                    <div class="product__image">
+                        <img src="https://c.dns-shop.ru/thumb/st1/fit/0/0/3434bb53be66c1d7252b18feaec52bcf/0be7e84009b0ff86863ffc1886ae4d570502a6c1c630e6c94462e07dc337feff.jpg.webp"
+                            alt="Ноутбук">
+                    </div>
+                    <div class="product__title">Ноутбук</div>
+                    <div class="product__description">Intel Core i5-12500H | RTX 3050 | ASUS TUF GAMING</div>
+                    <div class="product__price">69 999 р.</div>
+                    <div class="product__button">Добавить в корзину</div>
+                </div>
+                <div class="product__item logitech">
+                    <div class="product__image">
+                        <img src="https://c.dns-shop.ru/thumb/st1/fit/500/500/d4bfd939c34805cc874f6da34d6a4070/73dd06c0a2d4c9ff74cfaafaedec60012cae0a437e72ed35351e0fa8fa203289.jpg.webp"
+                            alt="Наушники">
+                    </div>
+                    <div class="product__title">Наушники</div>
+                    <div class="product__description">20000 Гц | 83.1 дБ | Черный цвет, Logitech</div>
+                    <div class="product__price">7 999 р.</div>
+                    <div class="product__button">Добавить в корзину</div>
+                </div>
+                <div class="product__item logitech">
+                    <div class="product__image">
+                        <img src="https://c.dns-shop.ru/thumb/st4/fit/wm/0/0/f6f8a968737aa626b537a7464fc29323/e62ccb54899c020afa65d62086136a90e9daad38cbd04de88445a5980414c612.jpg.webp"
+                            alt="Мышь">
+                    </div>
+                    <div class="product__title">Мышь</div>
+                    <div class="product__description">12000 dpi, светодиодный, кнопки - 6, Logitech</div>
+                    <div class="product__price">3 299 р.</div>
+                    <div class="product__button">Добавить в корзину</div>
+                </div>
+                <div class="product__item logitech">
+                    <div class="product__image">
+                        <img src="https://c.dns-shop.ru/thumb/st4/fit/wm/0/0/9a117538a86b20a1d53a68e4109587ef/06850df4cce046ca19ee960cbd125c7a05b894d75ed0c5a518f92c0392900923.jpg.webp"
+                            alt="Клавиатура">
+                    </div>
+                    <div class="product__title">Клавиатура</div>
+                    <div class="product__description">Мембранная, клавиш - 104, черный цвет, Logitech</div>
+                    <div class="product__price">1 099 р.</div>
+                    <div class="product__button">Добавить в корзину</div>
+                </div>
+                <div class="product__item">
+                    <div class="product__image">
+                        <img src="https://c.dns-shop.ru/thumb/st4/fit/500/500/00dce26143471469d88bf4649ec48657/64f1d143e69fd2fb4b9c42df1025d1f72a52c273fc365a33d49b0913c5a2df7a.jpg.webp"
+                            alt="Коврик">
+                    </div>
+                    <div class="product__title">Коврик</div>
+                    <div class="product__description">Нейлон, спандекс, 480 мм x 410 мм x 4 мм</div>
+                    <div class="product__price">2 750 р.</div>
+                    <div class="product__button">Добавить в корзину</div>
+                </div>
+                <div class="product__item">
+                    <div class="product__image">
+                        <img src="https://c.dns-shop.ru/thumb/st1/fit/500/500/c7f3ec0c016cba67976c14178766947e/bd9d8955b2430fb758cab25cf96edde5d5c8c329823e788d6dced74300b53f7d.jpg.webp"
+                            alt="Саундбар">
+                    </div>
+                    <div class="product__title">Саундбар</div>
+                    <div class="product__description">2.0, 30 Вт, Bluetooth, ширина панели - 780 мм</div>
+                    <div class="product__price">3 999 р.</div>
+                    <div class="product__button">Добавить в корзину</div>
+                </div>
+                <div class="product__item">
+                    <div class="product__image">
+                        <img src="https://c.dns-shop.ru/thumb/st4/fit/500/500/20122fbb4f78074b18558e35dfdabf7f/c8a1c68a6545aa75430644b91d50a7c16c83bdbfa359dfd8b8a853172cda99c4.jpg.webp"
+                            alt="Кофемашина">
+                    </div>
+                    <div class="product__title">Кофемашина</div>
+                    <div class="product__description">Исп. кофе - зерновой, молотый, 1455 Вт, 2.2 л</div>
+                    <div class="product__price">37 999 р.</div>
+                    <div class="product__button">Добавить в корзину</div>
+                </div>
+                <div class="product__item iphone">
+                    <div class="product__image">
+                        <img src="https://c.dns-shop.ru/thumb/st1/fit/500/500/6066e9a66f06469c71902b4684ba5eaa/4a52393e05798dff7c7d6f1abb0d46305de0c6581b96f47203c0fe10f9abf340.jpg.webp"
+                            alt="Чехол">
+                    </div>
+                    <div class="product__title">Чехол для наушников</div>
+                    <div class="product__description">Силикон, застежка - карабин, белый цвет, для Airpods</div>
+                    <div class="product__price">299 р.</div>
+                    <div class="product__button">Добавить в корзину</div>
+                </div>
+                <div class="product__item">
+                    <div class="product__image">
+                        <img src="https://c.dns-shop.ru/thumb/st4/fit/500/500/8c0e39bfac77475d5cd88ee7aa6f8546/44961597c152f8729dd77f5e3ac4867261bdec0d3972eef016cf2b7a01df06b2.jpg.webp"
+                            alt="Флешка">
+                    </div>
+                    <div class="product__title">Память USB</div>
+                    <div class="product__description">USB 3.2 Gen 1/USB Type-A, до 100 Мбайт/сек, монолит, металл</div>
+                    <div class="product__price">499 р.</div>
+                    <div class="product__button">Добавить в корзину</div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Форма обратной связи</h2>
+            <div class="forma">
+                <form action="#">
+                    <input type="text" placeholder="Введите ваше имя" required>
+                    <input type="text" placeholder="+7 999-999-99-99" maxlength="16" required>
+                    <input type="email" placeholder="bezurton@gmail.com">
+                    <select name="problem" id="prob">
+                        <option selected disabled>Выберите вашу проблему</option>
+                        <option value="buy">Не могу купить товар</option>
+                        <option value="delivery">Товар не доставили</option>
+                        <option value="site">Проблемы с сайтом</option>
+                        <option value="another">Другая проблема</option>
+                    </select>
+                    <textarea placeholder="Опишите вашу проблему..." id="textprob" required></textarea>
+                    <input type="submit" id="send">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__title">Site Designed By: Баштан Дмитрий Евгеньевич</div>
+        <div class="footer__contacts">Email: <a href="mailto:bezurton@gmail.com">bezurton@gmail.com</a> | Тел: <a
+                href="tel:+79999999999">+7 (999)
+                999-99-99</a></div>
+        <div class="footer__telegram"><a href="https://t.me/coldhearted">Telegram</a></div>
+        <div class="footer__info">&copy; 2025 Bash</div>
+    </footer>
+</body>
+
+</html>
+</body>
+
+</html>

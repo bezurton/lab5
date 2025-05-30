@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+.progressbar {
+    margin: auto;
+    width: 300px;
+    height: 50px;
+    border: 2px solid orange;
+}
+
+.square {
+    height: 47px;
+    width: 47px;
+    background-color: orange;
+}
+
+.squaremove {
+    animation-name: squaremoving;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes squaremoving {
+    from {
+        margin-left: -2px;
+    }
+    to {
+        margin-left: 250px;
+    }
+}
